@@ -1,0 +1,36 @@
+{C:/Users/JulioCesar/OneDrive/Documentos/6to Semestre/Arqui Compus/VERILOG/2DATAREA/NOR.v} {1 {vlog -work work {C:/Users/JulioCesar/OneDrive/Documentos/6to Semestre/Arqui Compus/VERILOG/2DATAREA/NOR.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module NOR
+
+Top level modules:
+	NOR
+
+} {} {}} {C:/Users/JulioCesar/OneDrive/Documentos/6to Semestre/Arqui Compus/VERILOG/2DATAREA/LFSR.v} {1 {vlog -work work {C:/Users/JulioCesar/OneDrive/Documentos/6to Semestre/Arqui Compus/VERILOG/2DATAREA/LFSR.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module LFSR
+
+Top level modules:
+	LFSR
+
+} {} {}} {C:/Users/JulioCesar/OneDrive/Documentos/6to Semestre/Arqui Compus/VERILOG/2DATAREA/FF.v} {1 {vlog -work work {C:\Users\JulioCesar\OneDrive\Documentos\6to Semestre\Arqui Compus\VERILOG\2DATAREA\FF.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module FF
+
+Top level modules:
+	FF
+
+} {} {}} {C:/Users/JulioCesar/OneDrive/Documentos/6to Semestre/Arqui Compus/VERILOG/2DATAREA/XOR.v} {1 {vlog -work work {C:/Users/JulioCesar/OneDrive/Documentos/6to Semestre/Arqui Compus/VERILOG/2DATAREA/XOR.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module XOR
+
+Top level modules:
+	XOR
+
+} {} {}} {C:/Users/JulioCesar/OneDrive/Documentos/6to Semestre/Arqui Compus/VERILOG/2DATAREA/OR.v} {1 {vlog -work work {C:/Users/JulioCesar/OneDrive/Documentos/6to Semestre/Arqui Compus/VERILOG/2DATAREA/OR.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module OR
+
+Top level modules:
+	OR
+
+} {} {}}

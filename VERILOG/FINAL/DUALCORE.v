@@ -1,0 +1,36 @@
+module DUALCORE(SCLK, SRST, SINT, ADDRBUF, DATABUF, REEMPLAZO_A, REEMPLAZO_B, AR, DR);
+  input SCLK;
+  input SRST;
+  input SINT;
+  input AR;
+  input [23:0] ADDRBUF ;
+  input [31:0] DATABUF;
+  input REEMPLAZO_A;
+  input REEMPLAZO_B;
+  reg SRST_F;
+  reg RW_A;
+  reg RW_B;
+  reg SNOOP_A;
+  reg SNOOP_B;
+  reg PHIT_A;
+  reg PHITM_A;
+  reg PHIT_B;
+  reg PHITM_B;
+  reg PLCK_A;
+  reg PLCK_B;
+  reg SLCK_A;
+  reg SLCK_B;
+  reg PINV_A;
+  reg PINV_B;
+  reg DATA_I;
+  reg DATA_O;
+  reg ADDR_O;
+  input DR;
+  
+  FF flop_AR(clock, reset, data, flop);
+  FF flop_rst(SCLK, SRST, SRST, SRST_F);
+  SYSTEM sistema(SRST_F, SCLK, SINT, PHIT_A, PHIT_B, PHITM_A, PHITM_B, PLCK_A, PLCK_B, SLCK_A, SLCK_B);
+  PROCESSOR processor_a(SCLK, SLCK_A, DR, SRST_F, SINT, REEMPLAZO_A, AR, PLCK_A, PINV_B, PINV_A, ADDRBUF, DATA_I, DATA_O, PHIT_B, PHITM_B, PHIT_A, PHITM_A, RW_A);
+  PROCESSOR processor_b(SCLK, SLCK_B, DR, SRST_F, SINT, REEMPLAZO_B, AR, PLCK_B, PINV_A, PINV_B, ADDRBUF, DATA_I, DATA_O, PHIT_A, PHITM_A, PHIT_B, PHITM_B, RW_B);
+  MM main_memory(RW_A, RW_B, SNOOP_A, SNOOP_B, AR, DATA_O, ADDRBUF, SCLK, SRST_F, SINT, DATA_I, DR);
+endmodule
